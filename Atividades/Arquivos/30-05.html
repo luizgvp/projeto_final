@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+    </head>
+    <body>
+        <p>
+            Questão 1 - Entrar com um número e informar se ele é ou não divisível por 5.
+            Obs: Um número é divisível por 5 quando, dividindo-se este número por 5, o resto da divisão = 0.            
+            dica: usar o operador de módulo(%)            
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="pt-br"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Atividade&lt;/title&gt;
+                        &lt;style&gt;
+                            body{
+                                font-family: sans-serif;
+                                font-size: 50px;
+                                text-align: center;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;script&gt
+                            let num = parseFloat(prompt("Informe um número: "));
+                            if(num % 5 == 0){
+                                document.write("O número "+ num +" é divisivel por 5!");
+                            }
+                            else{
+                                document.write("O número "+ num +" não é divisivel por 5!");
+                            }
+                        &lt;/script&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            Questão 2 - Entrar com um número e imprimi-lo caso seja maior que 20.
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="pt-br"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Atividade&lt;/title&gt;
+                        &lt;style&gt;
+                            body{
+                                font-family: sans-serif;
+                                font-size: 50px;
+                                text-align: center;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;script&gt;
+                            let num = parseFloat(prompt("Informe um número: "));
+                            if(num > 20){
+                                document.write(num);
+                            }
+                            else{
+                                document.write("O número inserido não é maior que 20!");
+                            }
+                        &lt;/script&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            Questão 3 - Ler os números A, B e C e imprimir se A+B é menor, maior, ou igual a C.
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="pt-br"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Atividade&lt;/title&gt;
+                        &lt;style&gt;
+                            body{
+                                font-family: sans-serif;
+                                font-size: 50px;
+                                text-align: center;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;script&gt;
+                            let a = parseInt(prompt("Informe o primeiro número: "));
+                            let b = parseInt(prompt("Informe o segundo número: "));
+                            let c = parseInt(prompt("Informe o terceiro número: "));
+                            if((a + b) > c){
+                                document.write("A soma de "+ a +" + "+ b +" é maior que "+ c);
+                            }
+                            else if((a + b) < c){
+                                document.write("A soma de "+ a +" + "+ b +" é menor que "+ c);
+                            }
+                            else{
+                                document.write("A soma de "+ a +" + "+ b +" é igual que "+ c);
+                            }
+                        &lt;/script&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            Questão 4 - Construir um algoritmo que leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
+            <pre>
+                &lt;!DOCTYPE html&gt;
+                &lt;html lang="pt-br"&gt;
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title&gt;Atividade&lt;/title&gt;
+                        &lt;style&gt;
+                            body{
+                                font-family: sans-serif;
+                                font-size: 50px;
+                                text-align: center;
+                            }
+                        &lt;/style&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;script&gt;
+                            let a = parseInt(prompt("Informe o primeiro número: "));
+                            let b = parseInt(prompt("Informe o segundo número: "));
+                            if((a + b) > 20){
+                                document.write("A soma dos dois números informados é maior que 20! Por isso será adicionado mais 8 na soma: "+ ((a + b) + 8));
+                            }
+                            else{
+                                document.write("A soma dos dois números informados é menor ou igual a 20! Por isso será retirado 5 da soma: "+ ((a + b) - 5));
+                            }
+                        &lt;/script&gt;
+                    &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            Questão 5 - Faça um programa em JavaScript para ler dois números e mostrar na tela (em uma lista) todos os números pares entre eles. Suponha que o segundo número é maior que o primeiro.
+            <pre>
+                &lt;html lang="pt-br"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Atividade&lt;/title&gt;
+                    &lt;style&gt;
+                        body{
+                            font-family: sans-serif;
+                            font-size: 50px;
+                            text-align: center;
+                        }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;script&gt;
+                        let a = parseInt(prompt("Insira um número (o primeiro valor precisa ser menor que o segundo!): "));
+                        let b = parseInt(prompt("Insira outro número: "));
+            
+                        if(a % 2 != 0){
+                            a += 1;
+                        }
+                        document.write("Os números pares entre "+ a + " e "+ b +" são: ");
+                        for(let i = a; i <= b; i += 2){
+                            document.write(i +", ");
+                        }
+                    &lt;/script&gt;
+                &lt;/body&gt;
+            &lt;/html&gt;
+            </pre>
+            Questão 6 - Escreva um programa em JavaScript que receba números do usuário enquanto eles forem positivos e ao fim o programa deve mostrar quantos números foram digitados. <br><br>
+            Questão 7 - Determinado indivíduo (indivíduo A) tem 1,5 m e cresce 2 centímetros por ano, enquanto que outro indivíduo (indivíduo B) tem 1,10 m e cresce 3 centímetros por ano. Codifique um programa JavaScript que receba a altura dos indivíduos, calcule e mostre quantos anos serão necessários para que o indivíduo B seja maior que o indivíduo A.
+        </p>
+    </body>
+</html>

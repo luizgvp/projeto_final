@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #17202A;
+    height: 8vh;
+}
+
+main{
+    background-image: url("../Imagens/background.jpg");
+    background-size: cover;
+    height: 92vh;
+    text-align: center;
+    font-size: 20px;
+}
+
+.lista{
+    list-style: none;
+    display: flex;
+}
+
+.lista li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.atividades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50vw;
+    height: 60vh;
+    margin: auto;
+    transform: translate(0px, 80px);
+}
+
+a:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 1100px) {
+    .atividades{
+        width: 80vw;
+        height: 80vh;
+    }
+}

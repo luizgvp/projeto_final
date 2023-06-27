@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade</title>
+    </head>
+    <body>
+        <p>
+            Questão 1 - Construa uma página que leia 4 números e mostre a média dos mesmos. Para mostrar o resultado utilize um alert.
+            <pre>
+                &lt;body&gt;
+                    &lt;script&gt;                
+                        var num1 = parseFloat(prompt("Informe o primeiro número:"));                
+                        var num2 = parseFloat(prompt("Informe o segundo número:"));                
+                        var num3 = parseFloat(prompt("Informe o terceiro número:"));                
+                        var num4 = parseFloat(prompt("Informe o quarto número:"));
+                        alert("A média é:" + (num1 + num2 + num3 + num4) / 4);
+                    &lt;/script&gt;            
+                &lt;/body&gt;
+            </pre>
+            Questão 2 - Construa uma página que leia o saldo de uma aplicação e mostre, em um alert,  o novo saldo, considerado o reajuste de 2%.
+            <pre>
+                &lt;body&gt;
+                    &lt;script&gt;          
+                        var num1 = parseFloat(prompt("Informe o primeiro valor:"));            
+                        var num2 = parseFloat(prompt("Informe o segundo valor:"));            
+                        alert("O saldo atual é:" + (num1 + num2));            
+                        alert("O saldo com reajuste de 2%:" + (num1 + num2) * 1.02);            
+                    &lt;/script&gt;            
+                &lt;/body&gt;
+            </pre>
+            Questão 3 - Escrever um código JavaScript que receba uma quantidade de segundos e converta em minutos e segundos. Por exemplo, 252 segundos equivalem a 4 minutos e 12 segundos.
+            <pre>
+                &lt;script&gt;
+                    var num1 = parseInt(prompt("Informe a quantidade de segundos:"));                
+                    alert("A conversão de segundos para minutos e segundos é: " + parseInt(num1 / 60) + " minutos e " + (num1 % 60) + " segundos.")                
+                &lt;/script&gt;
+            </pre>
+            Questão 4 - Elabore um programa em JavaScript que receba um valor em minutos e converta num formato com dias, horas e minutos. Mostre o resultado na tela com a função "document.write".
+            <pre>
+                &lt;body&gt;
+                    &lt;script&gt;               
+                        var num1 = parseInt(prompt("Informe a quantidade de minutos:"));                
+                        var dias = parseInt(num1 / 1440)                
+                        document.write("A conversão de minutos para dias, horas e minutos é: " + dias + " dia(s) e " +  parseInt(dias / 60) + " hora(s) e " + (num1 % 60) + " minutos.")                
+                    &lt;/script&gt;               
+                &lt;/body&gt;
+            </pre>
+            Questão 5 - Elabore um programa em JavaScript para receber uma quantidade de horas e uma quantidade de minutos e converter apenas em minutos. Mostre o resultado utilizando a função "document.write".
+            <pre>
+                &lt;body&gt;
+                    &lt;script&gt;                
+                        var num1 = parseInt(prompt("Informe a quantidade de horas:"));                
+                        var num2 = parseInt(prompt("Informe a quantidade de minutos:"));                
+                        var mim = parseInt(num1 * 60)                
+                        document.write("A conversão de horas e minutos para somente minutos é: " + (mim + num2) + " minutos." )                
+                    &lt;/script&gt;               
+                &lt;/body&gt;
+            </pre>
+            Questão 6 - Escreva um programa em JavaScript para calcular e exibir o comprimento de uma circunferência, sendo dada o valor de seu raio. C = 2πR.
+            Pode-se utilizar a função Math.PI para obter o valor de PI
+            <pre>
+                &lt;body&gt;
+                    &lt;script&gt;                
+                        var num1 = parseFloat(prompt("Informe o raio da circunferência em cm: "));                
+                        var calc = parseFloat(2 * 3.14 * num1)                
+                        document.write("O comprimento da circunferência é: " + calc + " cm.")                
+                    &lt;/script&gt;                
+                &lt;/body&gt;
+            </pre>
+            Questão 7 - Elabore um programa que leia um comprimento em polegadas, calcule e exiba o comprimento em milímetros, considerando que 1 polegada equivale a 25,4 milímetros. Mostre o resultado utilizando a função "document.write".
+            <pre>
+                &lt;body&gt;
+                    &lt;script&gt;                
+                        var num1 = parseFloat(prompt("Informe o número de polegadas: "));                
+                        var pol = parseFloat(num1 * 25.4)                
+                        document.write("A conversão de polegadas para mm é: " + pol)                
+                    &lt;/script&gt;                
+                &lt;/body&gt;
+            </pre>
+        </p>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+.container1{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	background-color: lightgray;
+}
+
+.container2{
+	display: grid;
+	align-items: center;
+    justify-content: center;
+	background-color: lightgray;
+}
+
+.container3{
+	display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+	background-color: lightgray;
+}
+
+.container4{
+	display: grid;
+	align-items: center;
+    justify-content: center;
+	background-color: lightgray;
+}
+
+#logo{
+	background-color: gray;
+	width: 800px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 80px;
+}
+
+#navigation{
+	background-color: gray;
+	width: 800px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 80px;
+}
+
+#header{
+	background-color: gray;
+	width: 1600px;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 100px;
+}
+
+#intro{
+	background-color: gray;
+	width: 1600px;
+	height: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 100px;
+}
+
+#box1{
+	background-color: gray;
+	width: 437px;
+	height: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 600px;
+}
+
+#box2{
+	background-color: gray;
+	width: 437px;
+	height: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 600px;
+}
+
+#box3{
+	background-color: gray;
+	width: 437px;
+	height: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 600px;
+}
+
+#footer{
+	background-color: gray;
+	width: 1600px;
+	height: 80px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: x-large;
+	font-family: sans-serif;
+	line-height: 80px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 10/06/2023</title>
+        <style>
+            body{
+                font-size: 20px;
+                font-family: sans-serif
+            }
+            fieldset{
+                width:250px;
+                margin: 0 auto;
+            }
+        </style>
+        <script>
+            function myfunction(){
+                let nome = document.getElementById("nome").value;
+                let sexo = document.getElementById("sexo").value;
+                let idade = document.getElementById("idade").value;
+                if(sexo == "f" && idade < 25){
+                    resultado.textContent = nome +" - ACEITA";
+                } else{
+                    resultado.textContent = nome +" - NÃO ACEITA";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <fieldset>
+            <form>
+                <label>Nome: <input type="text" id="nome"></label>
+                <br /><br />
+                <label for="sexo">Sexo: </label>
+                <select name="sexo" id="sexo">
+                    <option value="">Selecione...</option>
+                    <option value="m">Masculino</option>
+                    <option value="f">Feminino</option>
+                </select>
+                <br /><br />
+                <label>Idade: <input type="number" id="idade"></label>
+                <br /><br />
+                <button type="button" onclick="myfunction()">Verificar</button>
+                <input type="reset" value="Limpar">
+                
+            </form>
+            <p id="resultado"></p>
+        </fieldset>
+    </body>
+</html>
